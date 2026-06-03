@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/17c0e275f4.js" crossorigin="anonymous"></script>
+    <title>FORM</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class ="box">
+    <h1>Sign up here</h1>
+    <p>Sign up to create your account and unlock exclusive features!</p>
+
+    <div id="messagebox" class="message-box"></div>
+
+    <form id="registerForm">
+        <div class="form-grid">
+            <div class="form-group">
+            <label for="username">Username<i class="fa-regular fa-user"></i></label>
+            <input
+             type="text"
+             id="username"
+             name="username"
+             placeholder="Enter your username"
+            />
+            <span class="error" id="usernameError"></span>
+            </div>
+            
+            <div class="form-group">
+            <label for="email">Email<i class="fa-regular fa-envelope"></i></label>
+            <input
+             type="email"
+             id="email"
+             name="email"
+             placeholder="Enter your email"
+            />
+            <span class ="error" id="emailerror"></span>
+            </div>
+
+            <div class="form-group">
+            <label for="password">Password<i class="fa-solid fa-lock"></i></label>
+            <input
+             type="password"
+             name="password"
+             id="password"
+             placeholder="Confrim your password"
+            />
+            
+            <span class="error" id="passworderror"></span>
+            </div>
+
+            <div class="form-group">
+            <label for="address">Address<i class="fa-solid fa-location-dot"></i></label>
+            <input
+             type="text"
+             id="address"
+             name="address"
+             placeholder="Enter your address"
+            />
+            <span class="error" id="addresserror"></span>
+            </div>
+
+              <div class="form-group">
+                <label for="phone">Phone<i class="fa-solid fa-phone"></i></label>
+                <input
+                 type="tel"
+                 id="phone"
+                 name="phone"
+                 placeholder="Enter your phone number"
+                />
+                <span class="error" id="phoneerror"></span>
+              </div>
+
+              <div class="form-group">
+                <label>Gender<i class="fa-solid fa-person"></i></label>
+                <div class="gender-option">
+                    <label>
+                        <input type="radio" name="gender" value="male"/>
+                        Male
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="female"/>
+                        Female
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="other"/>
+                        Other
+                    </label>
+                </div>
+                <span class="error" id="genderError"></span>
+         </div>
+     </div>
+
+     <button type="submit" class="btn-register">Register</button>
+     </form>
+
+     <p  class="form-footer">
+        Already have a account? <a>Login</a>
+     </p>
+  </div>
+
+
+</body>
+</html>
