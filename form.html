@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/17c0e275f4.js" crossorigin="anonymous"></script>
+        <title>Form</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+
+    </head>
+   <body class="bg-black p-6 m-6 flex justify-center items-center min-h-screen ">
+
+    <form>
+
+    <div class="w-full  bg-gray-800 p-8 m-8 border border-white rounded-xl shadow-2xl">
+        <h1 class="bg-gray text-2xl font-bold text-purple-500 mb-4 text-center">
+            Sign Up here</h1>
+          <p class=" text-small text-white mb-8 text-center">
+            Sign up to create your account and unlock exclusive features!</p>
+
+            
+    
+          <div class=" grid grid-cols-1 md:grid-cols-2 gap-6 ">
+            <div class="flex flex-col gap-2">
+            <label for="username" class="text-white flex items-center gap-2">Username<i class="fa-regular fa-user"></i></label>
+             <input
+             type="text"
+             id="username"
+             name="username"
+             placeholder="Enter your username"
+             class="w-full rounded-lg  text-white bg-gray-900 border border-gray-600 px-4 py-3 placeholder-white-400 focus:outline-none focus:ring-2 focus:ring-purple-500"/>
+            </div>
+
+            <div class="flex flex-col gap-2">
+            <label for="email" class="text-white flex items-center gap-2">Email<i class="fa-regular fa-envelope"></i></label>
+             <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              class="w-full rounded-lg bg-gray-900 border border-gray-600 px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500"/>
+              </div>
+
+
+            <div class="flex flex-col gap-2">
+            <label for="password" class="text-white flex items-center gap-2">Password<i class="fa-solid fa-lock"></i></label>
+             <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Confirm your password" 
+              class="w-full rounded-lg bg-gray-900 border border-gray-600 px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500"/>
+            </div>
+
+            <div class="flex flex-col gap-2">
+            <label for="address" class="text-white flex items-center gap-2">Address<i class="fa-solid fa-location-dot"></i></label>
+             <input
+             type="text"
+             id="address"
+             name="address"
+             placeholder="Enter your address"
+             class="w-full rounded-lg bg-gray-900 border border-gray-600 px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500"
+             />
+             </div>
+
+             <div class="flex flex-col gap-2">
+            <label for="phone" class="text-white flex items-center gap-2">Phone<i class="fa-solid fa-phone"></i></label>
+                <input
+                 type="tel"
+                 id="phone"
+                 name="phone"
+                 placeholder="Enter your phone number"
+                 class="w-full rounded-lg bg-gray-900 border border-gray-600 px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
+                />
+                </div>
+
+            <div class="flex gap-2 flex-col  cursor-pointer">
+                <label class="text-white flex items-center gap-2">Gender<i class="fa-solid fa-person"></i></label>
+                 <div class=" text-white accent-purple-500">
+                    <label>
+                    <input type="radio" name="gender" value="male"/>
+                     Male
+                    </label>
+
+                    <label>
+                    <input type="radio" name="gender" value="female"/>
+                     Female
+                    </label>
+
+                    <label>
+                    <input type="radio" name="gender" value="others"/>
+                     Others
+                    </label>
+        
+                 </div>
+            </div>
+
+            
+
+    </form>
+     </div>
+
+     <button type="submit" class="w-full  mt-8 py-3 rounded-2xl  bg-purple-600 text-white  font-semibold shadow-lg">Register</button>
+
+     <p class="text-center flex justify-center items-center mt-6 text-gray-300">
+        Already have a acoount?<a href="#" class="text-purple-400 hover:text-purple-300 hover:underline font-semibold">Login</a>
+     </p>
+
+        
+         
+    </div>
+
+
+</body>
+</html>
